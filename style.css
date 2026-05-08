@@ -1,0 +1,249 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #7a0000;
+    color: white;
+}
+
+/* TOPO */
+.inicio{
+    width: 100%;
+    min-height: 100vh;
+    background:
+            linear-gradient(rgba(80,0,0,0.6), rgba(80,0,0,0.8)),
+            radial-gradient(circle, #ff1a1a, #7a0000);
+
+    padding: 80px;
+}
+
+.conteudo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+
+}
+main{
+    position: relative;
+}
+
+.balao{
+    position: absolute;
+    right: 120px; /* joga pro lado direito */
+    top: 180px;   /* sobe o balão */
+
+}
+
+.balao img{
+    width: 550px;
+}
+
+.texto{
+    width: 500px;
+}
+
+.texto h2{
+    font-family: 'Great Vibes', cursive;
+    font-size: 70px;
+    font-weight: normal;
+}
+
+.texto h1{
+    font-size: 95px;
+    line-height: 100px;
+    margin-bottom: 25px;
+}
+
+.texto p{
+    font-size: 25px;
+    line-height: 40px;
+    margin-bottom: 35px;
+}
+
+.texto button{
+    width: 280px;
+    height: 70px;
+    border: none;
+    border-radius: 50px;
+    background: white;
+    color: #a00000;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.texto button:hover{
+    transform: scale(1.05);
+}
+
+.imagem-topo img{
+    width: 450px;
+}
+
+/* CARDS */
+
+.cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 70px 40px;
+    background: #8b0000;
+}
+
+.card{
+    width: 340px;
+    background: linear-gradient(#b30000, #8b0000);
+    border-radius: 25px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    transition: 0.5s;
+    position: relative;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card img{
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    background: white;
+}
+
+.icone{
+    width: 90px;
+    height: 90px;
+    background: #d60000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    margin: auto;
+    margin-top: -45px;
+    position: relative;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.card h2{
+    font-size: 42px;
+    margin-top: 20px;
+}
+
+.card p{
+    font-size: 20px;
+    line-height: 35px;
+    padding: 30px;
+}
+
+/* FINAL */
+.final{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 100px 50px;
+    background:
+            linear-gradient(rgba(120,0,0,0.7), rgba(120,0,0,0.9)),
+            radial-gradient(circle, #ff4d4d, #7a0000);
+}
+
+.coracao{
+    width: 350px;
+    height: 350px;
+    background: #ff1a1a;
+    transform: rotate(-45deg);
+    position: relative;
+    box-shadow: 0 0 40px rgba(255,255,255,0.3);
+}
+
+.coracao::before,
+.coracao::after{
+    content: "";
+    width: 350px;
+    height: 350px;
+    background: #ff1a1a;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.coracao::before{
+    top: -175px;
+    left: 0;
+}
+
+.coracao::after{
+    left: 175px;
+    top: 0;
+}
+
+.coracao h1{
+    position: absolute;
+    height: 160px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    font-size: 80px;
+    font-family: 'Great Vibes', cursive;
+    z-index: 2;
+}
+
+.texto-final{
+    width: 550px;
+}
+
+.texto-final h2{
+    font-size: 65px;
+    margin-bottom: 30px;
+}
+
+.texto-final p{
+    font-size: 25px;
+    line-height: 45px;
+}
+
+.final{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 180px;
+    padding: 100px 50px;
+    background:
+            linear-gradient(rgba(120,0,0,0.7), rgba(120,0,0,0.9)),
+            radial-gradient(circle, #ff4d4d, #7a0000);
+}
+
+.texto-final{
+    width: 550px;
+    font-family: Montserrat;
+    margin-left: 80px;
+}
+
+/* RODAPÉ */
+
+footer{
+    width: 100%;
+    padding: 20px;
+    background: #5c0000;
+    text-align: center;
+    font-size: 19px;
+}
